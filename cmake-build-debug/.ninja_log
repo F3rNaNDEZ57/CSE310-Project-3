@@ -1,0 +1,17 @@
+# ninja log v5
+13	932	7335149103968207	CMakeFiles/Final.dir/stack.cpp.obj	8317c856dbbae2b4
+3	865	7335210857079054	CMakeFiles/Final.dir/main.cpp.obj	af92b6e26d2e73a6
+7	899	7335149103628181	CMakeFiles/Final.dir/data_structures.cpp.obj	c6bf7e9e9851b2e0
+865	1040	7335210858789049	Final.exe	3416eec04d842c07
+10	995	7335149104598153	CMakeFiles/Final.dir/heap.cpp.obj	16f7ab5b5785f7b
+4	1838	7335210362319852	CMakeFiles/Final.dir/graph.cpp.obj	5b7acee2096373fc
+4	679	7335223630078186	CMakeFiles/Final.dir/util.cpp.obj	12ed14453b8d5dd9
+679	898	7335223632226769	Final.exe	6a1ef4242ad94198
+9	1129	7335231872922855	CMakeFiles/Final.dir/graph.cpp.obj	5b7acee2096373fc
+3	758	7335233470643854	CMakeFiles/Final.dir/main.cpp.obj	af92b6e26d2e73a6
+759	896	7335233471983853	Final.exe	6a1ef4242ad94198
+3	883	7335271404091789	CMakeFiles/Final.dir/main.cpp.obj	af92b6e26d2e73a6
+8	1166	7335271406931818	CMakeFiles/Final.dir/graph.cpp.obj	5b7acee2096373fc
+1167	1425	7335271409461779	Final.exe	6a1ef4242ad94198
+4	736	7335271613511342	CMakeFiles/Final.dir/main.cpp.obj	af92b6e26d2e73a6
+736	952	7335271615551349	Final.exe	6a1ef4242ad94198
