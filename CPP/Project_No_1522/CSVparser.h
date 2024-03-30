@@ -1,8 +1,0 @@
-//
-// Created by G3 on 3/24/2024.
-//
-
-#ifndef PROJECT_NO_1522_CSVPARSER_H
-#define PROJECT_NO_1522_CSVPARSER_H
-
-#endif //PROJECT_NO_1522_CSVPARSER_H
