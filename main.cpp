@@ -135,14 +135,15 @@ int main(int argc, char* argv[]) {
     int V, E;
     file >> V >> E;
     graph = new Graph(V); // Initialize the graph with the number of vertices
+    graph->readGraphFromFile(inputFile, graphType == "DirectedGraph");
 
-    int u, v;
-    double w;
-    for (int i = 0; i < E; ++i) {
-        file >> u >> v >> w;
-        graph->addEdge(u - 1, v - 1, w, graphType == "DirectedGraph"); // Adjust indices if your implementation assumes 0-based indexing
-    }
-    file.close();
+//    int u, v;
+//    double w;
+//    for (int i = 0; i < E; ++i) {
+//        file >> u >> v >> w;
+//        graph->addEdge(u - 1, v - 1, w, graphType == "DirectedGraph"); // Adjust indices if your implementation assumes 0-based indexing
+//    }
+//    file.close();
 
     // Command processing loop
     std::string line;

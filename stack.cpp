@@ -1,33 +1,36 @@
 #include "stack.h"
-#include <iostream>
 
-// Destructor to clean up the stack
+Stack::Stack() : head(nullptr) {}
+
 Stack::~Stack() {
     while (!isEmpty()) {
         pop();
     }
 }
 
-// Push a vertex index onto the stack
-void Stack::push(int vertexIndex) {
-    StackNode* newNode = new StackNode(vertexIndex, top);
-    top = newNode;
+void Stack::push(VERTEX* vertex) {
+    StackNode* newNode = new StackNode{vertex, head};
+    head = newNode;
 }
 
-// Pop the top vertex index off the stack
-int Stack::pop() {
+VERTEX* Stack::pop() {
     if (isEmpty()) {
-        std::cerr << "Stack is empty, cannot pop" << std::endl;
-        return -1; // Error value, adjust as necessary
+        return nullptr;
     }
-    StackNode* temp = top;
-    int vertexIndex = top->vertexIndex;
-    top = top->next;
+    StackNode* temp = head;
+    VERTEX* popped = head->data;
+    head = head->next;
     delete temp;
-    return vertexIndex;
+    return popped;
 }
 
-// Check if the stack is empty
+VERTEX* Stack::top() const {
+    if (isEmpty()) {
+        return nullptr;
+    }
+    return head->data;
+}
+
 bool Stack::isEmpty() const {
-    return top == nullptr;
+    return head == nullptr;
 }

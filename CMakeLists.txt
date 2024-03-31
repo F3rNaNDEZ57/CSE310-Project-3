@@ -13,4 +13,6 @@ add_executable(Final main.cpp
         graph.cpp
         graph.h
         util.cpp
-        util.h)
+        util.h
+        main.h
+        main.h)

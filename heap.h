@@ -1,20 +1,26 @@
-//
-// Created by G3 on 3/30/2024.
-//
-
 #ifndef HEAP_H
 #define HEAP_H
 
-#include "data_structures.h"
+#include "data_structures.h" // Assuming VERTEX might be used
 
-// Function prototypes for heap operations
-pHEAP initializeHeap(int capacity);
-void insertHeap(pHEAP heap, pVERTEX vertex);
-void decreaseKey(pHEAP heap, int index, double newKey);
-pVERTEX extractMin(pHEAP heap);
-void minHeapify(pHEAP heap, int index);
-void buildMinHeap(pHEAP heap);
+class Heap {
+public:
+    Heap(int capacity);
+    ~Heap();
+    void insert(VERTEX* vertex);
+    VERTEX* extractMin();
+    bool isEmpty() const;
+    void decreaseKey(int vertexIndex, double newValue);
+private:
+    void minHeapify(int index);
+    int parent(int index);
+    int left(int index);
+    int right(int index);
+    void swap(VERTEX** a, VERTEX** b);
 
+    VERTEX** elements; // Dynamic array of VERTEX pointers
+    int capacity;
+    int currentSize;
+};
 
 #endif // HEAP_H
-

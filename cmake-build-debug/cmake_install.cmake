@@ -1,4 +1,4 @@
-# Install script for directory: D:/Projects/FreeLancing/CPP/Project_01/Final
+# Install script for directory: D:/Projects/FreeLancing/CPP/Project_01/CSE310-Project-3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Projects/FreeLancing/CPP/Project_01/Final/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Projects/FreeLancing/CPP/Project_01/CSE310-Project-3/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

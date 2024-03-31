@@ -1,19 +1,30 @@
 #ifndef UTIL_H
 #define UTIL_H
 
-#include <string>
+#include "data_structures.h"
+#include <limits>
+#include <iomanip>
+#include <iostream>
 #include <vector>
+#include <queue>
+#include <fstream>
+#include <climits>
+#include <cstring>
+#include <unordered_map>
+#include <stack>
+#include <cfloat>
+#include <functional>
+#include <limits>
+#include <iomanip>
+#include <map>
+#include <sstream>
 
-// Function to open a file and return an ifstream object. Returns nullptr if file cannot be opened.
-std::ifstream* openFile(const std::string& fileName);
-
-// Validates the number of command-line arguments.
-bool validateArgCount(int argc, char* argv[]);
-
-// Parses and validates instructions from stdin. Returns a vector of strings.
-std::vector<std::string> parseInstructions();
-
-// Prints an error message to stderr.
-void printError(const std::string& message);
+// Function prototypes
+void readGraph(const char* filePath, GRAPH& graph, bool directed, int flag);
+void dijkstra(GRAPH& graph, int source);
+void printPath(GRAPH& graph, int source, int destination);
+void printAdjacencyList(GRAPH& graph);
+void insertEdge(std::vector<EDGE*>& list, EDGE* edge, int flag);
+// Add more function prototypes as needed
 
 #endif // UTIL_H
