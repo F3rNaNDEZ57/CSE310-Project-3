@@ -1,23 +1,14 @@
-#ifndef STACK_H
-#define STACK_H
+//
+// Created by G3 on 4/1/2024.
+//
 
-#include "data_structures.h" // Assuming VERTEX might be used
+#ifndef LAST_TRY_STACK_H
+#define LAST_TRY_STACK_H
 
-class Stack {
-public:
-    Stack();
-    ~Stack();
-    void push(VERTEX* vertex);
-    VERTEX* pop();
-    VERTEX* top() const;
-    bool isEmpty() const;
 
-private:
-    struct StackNode {
-        VERTEX* data;
-        StackNode* next;
-    };
-    StackNode* head;
+class stack {
+
 };
 
-#endif // STACK_H
+
+#endif //LAST_TRY_STACK_H

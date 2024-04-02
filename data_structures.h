@@ -1,8 +1,14 @@
-#ifndef DATA_STRUCTURES_H
-#define DATA_STRUCTURES_H
+//
+// Created by G3 on 4/1/2024.
+//
+
+#ifndef LAST_TRY_DATA_STRUCTURS_H
+#define LAST_TRY_DATA_STRUCTURS_H
 
 #include <vector>
 #include <unordered_map>
+
+using namespace std;
 
 enum COLOR { WHITE, GRAY, BLACK };
 
@@ -28,8 +34,8 @@ struct HEAP {
 };
 
 struct GRAPH {
-    std::vector<VERTEX*> vertices;
-    std::unordered_map<int, std::vector<EDGE*>> adj;
+    vector<VERTEX*> vertices;
+    unordered_map<int, vector<EDGE*>> adj;
 };
 
-#endif // DATA_STRUCTURES_H
+#endif //LAST_TRY_DATA_STRUCTURS_H
